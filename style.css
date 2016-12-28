@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.console {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.console .content {
+    margin: 0;
+    background-color: transparent;
+    height:97vh;
+    width: 30vw;
+    padding: 0;
+    overflow: scroll;
+}
+
+.console .content li {
+    margin: 1em;
+    margin-left: 2em;
+    list-style-type: none;
+}
+
+.console .content li::before {
+    content: "> "
+}
+.console .input {
+    width: 29vw;
+    height: 3vh;
+    background-color: black;
+    border: 0;
+    border-top: 1px solid white;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.console .input:focus {
+    outline:0
+}
